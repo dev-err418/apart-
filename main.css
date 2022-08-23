@@ -129,6 +129,29 @@ button, h3 {
     border-color: black;    
 }
 
+.contact {
+    display: flex; 
+    width: 100vw;    
+    min-height: calc(100vh - 80px);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+.contact, .horiz {
+    display: flex;
+    align-items: center
+}
+
+.contact, h4 {
+    font-weight: 400;
+    font-size: 20px;
+    white-space: pre-line;
+    text-align: center
+}
+
 @media (min-width:0px) and (max-width: 800px) {
     .photo-grid {
         padding: 1rem;
@@ -147,11 +170,22 @@ button, h3 {
         font-size: 15px
     }
     button, h3 {
-    font-weight: 500;
-    margin-right: 10px;
-    color: rgb(85,107,47, 0.8);
-    font-size: 15px;
-    cursor: pointer;
+        font-weight: 500;
+        margin-right: 10px;
+        color: rgb(85,107,47, 0.8);
+        font-size: 15px;
+        cursor: pointer;
 
-}
+    }
+    .contact, h4 {
+        font-weight: 400;
+        font-size: 15px;
+        white-space: pre-line;
+    }
+    .title {
+        font-size: 35px;
+    }
+    .title2 {
+        font-size: 25px;
+    }
 }
